@@ -1,0 +1,52 @@
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.section {
+  background-color: #303030;
+  width: 100%;
+  height: 100%;
+}
+.slider {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.slide {
+  width: 100%;
+}
+.wrap__text__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider__control input[name="contorl"] {
+  display: none;
+}
+.slider__control-label {
+  display: flex;
+}
+.slider__control-label label {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 5px;
+}
+.slider__control-label label .label-btn {
+  display: block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 2px solid #0165fd;
+  border-radius: 100%;
+  background-color: #0165fd;
+}
+.slider__control-label label .label-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
