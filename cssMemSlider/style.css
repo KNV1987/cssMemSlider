@@ -19,6 +19,8 @@ html {
 }
 .slide {
   width: 100%;
+  height: auto;
+  display: block;
 }
 .wrap__text__control {
   display: flex;
@@ -134,4 +136,13 @@ html {
 }
 #btn5:checked ~ .wrap__text__control .wrap__text .slider-text {
   transform: translateX(-20rem);
+}
+
+@media screen and (max-width: 375px) {
+  .wrap__text__control {
+    flex-direction: column-reverse;
+  }
+  .wrap__text {
+    align-self: flex-start;
+  }
 }
