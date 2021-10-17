@@ -1,0 +1,148 @@
+.container {
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+}
+html {
+  background-color: #303030;
+}
+.slider__wrap {
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 3%;
+}
+.slider {
+  width: 100%;
+  display: flex;
+  transition: all 0.5s;
+}
+.slide {
+  width: 100%;
+  padding: -1px;
+}
+.wrap__text__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider__control input[name="contorl"] {
+  display: none;
+}
+.slider__control-label {
+  display: flex;
+}
+.slider__control-label label {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  padding-left: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-left: 0.25rem;
+}
+.slider__control-label label .label-btn {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  cursor: pointer;
+  border: 2px solid #0165fd;
+  border-radius: 100%;
+  background-color: #0165fd;
+}
+.slider__control-label label:hover .label-btn {
+  background-color: #fff;
+  border-color: #fff;
+}
+#btn1:checked
+  ~ .wrap__text__control
+  .slider__control-label
+  label[for="btn1"]
+  .label-btn {
+  background-color: #303030;
+}
+#btn2:checked
+  ~ .wrap__text__control
+  .slider__control-label
+  label[for="btn2"]
+  .label-btn {
+  background-color: #303030;
+}
+#btn3:checked
+  ~ .wrap__text__control
+  .slider__control-label
+  label[for="btn3"]
+  .label-btn {
+  background-color: #303030;
+}
+#btn4:checked
+  ~ .wrap__text__control
+  .slider__control-label
+  label[for="btn4"]
+  .label-btn {
+  background-color: #303030;
+}
+#btn5:checked
+  ~ .wrap__text__control
+  .slider__control-label
+  label[for="btn5"]
+  .label-btn {
+  background-color: #303030;
+}
+
+#btn1:checked ~ .slider__wrap .slider {
+  transform: translateX(0);
+}
+#btn2:checked ~ .slider__wrap .slider {
+  transform: translateX(-100%);
+}
+#btn3:checked ~ .slider__wrap .slider {
+  transform: translateX(-200%);
+}
+#btn4:checked ~ .slider__wrap .slider {
+  transform: translateX(-300%);
+}
+#btn5:checked ~ .slider__wrap .slider {
+  transform: translateX(-400%);
+}
+.slider-text {
+  color: #fff;
+  font-style: 1rem;
+  display: flex;
+  width: 40rem;
+  transition: all 0.5s;
+}
+.wrap__text {
+  width: 8rem;
+  overflow: hidden;
+}
+.slide1-text {
+  box-sizing: border-box;
+  padding-left: 2px;
+  width: 8rem;
+}
+#btn1:checked ~ .wrap__text__control .wrap__text .slider-text {
+  transform: translateX(0);
+}
+#btn2:checked ~ .wrap__text__control .wrap__text .slider-text {
+  transform: translateX(-8rem);
+}
+#btn3:checked ~ .wrap__text__control .wrap__text .slider-text {
+  transform: translateX(-16rem);
+}
+#btn4:checked ~ .wrap__text__control .wrap__text .slider-text {
+  transform: translateX(-24rem);
+}
+#btn5:checked ~ .wrap__text__control .wrap__text .slider-text {
+  transform: translateX(-32rem);
+}
+
+@media screen and (max-width: 375px) {
+  .wrap__text__control {
+    flex-direction: column-reverse;
+  }
+  .wrap__text {
+    align-self: flex-start;
+  }
+}
