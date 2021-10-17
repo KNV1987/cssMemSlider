@@ -11,6 +11,7 @@ html {
   margin-bottom: 1.25rem;
   overflow: hidden;
   width: 100%;
+  border-radius: 3%;
 }
 .slider {
   width: 100%;
@@ -19,8 +20,7 @@ html {
 }
 .slide {
   width: 100%;
-  height: auto;
-  display: block;
+  padding: -1px;
 }
 .wrap__text__control {
   display: flex;
@@ -110,32 +110,32 @@ html {
   color: #fff;
   font-style: 1rem;
   display: flex;
-  width: 25rem;
+  width: 40rem;
   transition: all 0.5s;
 }
 .wrap__text {
-  width: 5rem;
+  width: 8rem;
   overflow: hidden;
 }
 .slide1-text {
   box-sizing: border-box;
   padding-left: 2px;
-  width: 5rem;
+  width: 8rem;
 }
 #btn1:checked ~ .wrap__text__control .wrap__text .slider-text {
   transform: translateX(0);
 }
 #btn2:checked ~ .wrap__text__control .wrap__text .slider-text {
-  transform: translateX(-5rem);
+  transform: translateX(-8rem);
 }
 #btn3:checked ~ .wrap__text__control .wrap__text .slider-text {
-  transform: translateX(-10rem);
+  transform: translateX(-16rem);
 }
 #btn4:checked ~ .wrap__text__control .wrap__text .slider-text {
-  transform: translateX(-15rem);
+  transform: translateX(-24rem);
 }
 #btn5:checked ~ .wrap__text__control .wrap__text .slider-text {
-  transform: translateX(-20rem);
+  transform: translateX(-32rem);
 }
 
 @media screen and (max-width: 375px) {
